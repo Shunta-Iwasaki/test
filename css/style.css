@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* 共通部分 */
+.body {
+    font-family: "Kaiti SC","Yu Gothic Medium","游ゴシック Medium",Yugothic,"游ゴシック体","ヒラギノ角ゴ Pro W3", sans-serif;
+}
+.wrapper {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+h2 {
+    font-family: "Kaiti SC";
+    font-size: 60px;
+    /* position: relative; */
+}
+p {
+    font-family: "メイリオ";
+    font-size: 27px;
+}
+.bg-grey {
+    background-color: #F2F2F2;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 1rem;
+}
+a {
+	display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: black;
+}
+a:hover {
+    color: grey;
+}
+/* header部分 */
+.logo {
+    width: 156px;
+    margin-top: -10px;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1285px;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 150px;
+}
+.main-nav, .sns-nav{
+    font-family: "kaiti SC";
+    display: flex;
+    font-size: 22px;
+    list-style: none;
+}
+.sns-nav {
+    margin-top: 30px;
+    margin-left: 37%;
+}
+.main-nav {
+    margin-top: 5px;
+}
+.sns-nav li{
+    margin-left: 1.8rem;
+    float: right;
+    position: relative;
+    display: inline;
+}
+.main-nav li:after{
+    content: "/";
+    padding: 0.8rem;
+}
+.main-nav li:last-child::after{
+    content: none;
+}
+.main-img {
+    margin-top: -10px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.fadeout {
+    animation : fadeOut 1s;
+    animation-fill-mode: both;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+.fade-in {
+    width: 108px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -850px;
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-property: opacity, transform;
+}
+.fade-in-down {
+    transform: translate(0, -50px);
+}
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* NEWS LIVE コンテンツ */
+dl {
+    margin-top: 10px;
+    height: 646px;
+    overflow-y: scroll;
+    position: relative;
+}
+dt {
+    font-family: "Al Bayan","Yu Gothic Medium";
+    font-size: 30px;
+    color:#7C7C7C;
+    padding-bottom: 1.25rem;
+    padding-top: 2.5rem;
+}
+dd {
+    font-family: "メイリオ";
+    font-size: 30px;
+    margin-left: 0%;
+    border-bottom: solid 1px #000;
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+}
+.live-content dd {
+    border-bottom: solid 3px #FFFFFF;
+}
+/* プロフィール */
+.profile {
+    display: flex;
+    margin-top: 42px;
+}
+.profile img {
+    margin-left: -10px;
+}
+.profile-text {
+    font-family: "メイリオ";
+    font-size: 27px;
+    display: block;
+    margin-left: 6rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* ディスコグラフィー */
+.disco-content h2{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.disco-content, .bg-grey {
+    margin-top: 100px;
+}
+.disco-content .wrapper{
+    height: 670px;
+    overflow-y: scroll;
+    position: relative;
+    margin-top: 42px;
+}
+.disco-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+.disco-content ul:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+.disco-content li{
+    display: inline-block;
+    margin-bottom: 2.8rem;
+}
+.disco-content p{
+    font-family: "クレー";
+}
+.date {
+    font-family: "Al Bayan","クレー","メイリオ","Yu Gothic Medium";
+    color: #AFAFAF;
+    padding-top: 0.5rem;
+}
+.footer-nav{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    margin: 50px;
+}
+.footer-nav li{
+    display: inline-block;
+}
+/* Page topボタン */
+.js-scroll-fadein{transition:opacity 1s;visibility:hidden;opacity:0}.js-scroll-fadein.is-fadein{visibility:visible;opacity:1}.arrow{position:fixed;right:12px;bottom:12px;color:#fff;cursor:pointer;background-color:#c4c4c4;border-radius:22px;padding:20px;transition:all 0.2s ease-in-out}.arrow:hover{opacity:.8;bottom:15px;box-shadow:0 2px 4px 1px rgba(0,0,0,0.5)}.arrow:before,.arrow:after{content:"";width:12px;height:12px;border-top:solid 3px #fff;border-right:solid 3px #fff;transform:rotate(-45deg);position:absolute;left:14px}.arrow:before{top:11px}.arrow:after{top:21px}
+/* footer */
+footer {
+    background: url(../img/func_footer.jpg);
+    background-repeat: repeat-x;
+    min-height: 156px;
+    /* margin-left: -10px; */
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+    font-family: "Kaiti SC";
+    font-size: 20px;
+    padding-top: 1rem;
+}
+@media screen and (min-width:640px) and (max-width:1280px) {
+    /*tablet用のcssを記述*/
+    .sns-nav, .main-nav {
+        align-items: flex-end;
+    }
+    .main-img {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        height: auto;
+        background-repeat: repeat-x;
+    }
+}
+@media (max-width: 639px) {
+    /* スマホ用のcssを記述 */
+    .main-nav {
+        display: none;
+    }
+    .main-img {
+        max-width: 100%;
+        height: auto;    
+    }
+    #text {
+        display: none;
+    }
+}
