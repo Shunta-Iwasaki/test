@@ -47,4 +47,18 @@ window.onload = function () {
     topButton.onclick = function() {
         scrollToTop();
     };
+
+    // ハンバーガーメニュー処理
+    $(function () {
+        $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
+          $('.menu , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+        })
+      });
+
+    // スクロール表示アニメーション
+    ScrollReveal().reveal('.scroll-fade',{
+        duration: 1600, // アニメーションの完了にかかる時間
+        origin: 'bottom', // どこから現れるか
+        distance: '50px'
+    });
 };
